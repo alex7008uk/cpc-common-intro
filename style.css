@@ -114,9 +114,7 @@ body {
     font-size: 1.1rem;
     margin-bottom: 2rem;
     opacity: 0.85;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+    white-space: nowrap;
 }
 
 .cta-button {
