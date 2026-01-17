@@ -58,7 +58,7 @@ const isoCourses = [
       {
         date: "02/05、06(四五)",
         time: "09:00~17:00",
-        session: "第1梯次",
+        session: "第1梯次 確定開課",
         url: "https://store.cpc.org.tw/Train/Contents/TC7951",
       },
       {
