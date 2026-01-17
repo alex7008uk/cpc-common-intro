@@ -417,10 +417,10 @@ function renderCourses() {
               <div class="session-item">
                 <div class="session-info">
                   <span class="session-number">${s.session ? `第${s.session}梯次` : "第1梯次"}</span>
+                  <span class="session-date">${s.date}</span>
                   <span class="session-time">${s.time}</span>
                 </div>
                 <div class="session-date-info">
-                  <span class="session-date">${s.date}</span>
                   <a href="${s.url}" target="_blank" class="session-link">立即報名</a>
                 </div>
               </div>
@@ -456,10 +456,10 @@ function renderCourses() {
               <div class="session-item">
                 <div class="session-info">
                   <span class="session-number">${s.session ? `第${s.session}梯次` : "第1梯次"}</span>
+                  <span class="session-date">${s.date}</span>
                   <span class="session-time">${s.time}</span>
                 </div>
                 <div class="session-date-info">
-                  <span class="session-date">${s.date}</span>
                   <a href="${s.url}" target="_blank" class="session-link">立即報名</a>
                 </div>
               </div>
@@ -495,10 +495,10 @@ function renderCourses() {
               <div class="session-item">
                 <div class="session-info">
                   <span class="session-number">${s.session ? `第${s.session}梯次` : "第1梯次"}</span>
+                  <span class="session-date">${s.date}</span>
                   <span class="session-time">${s.time}</span>
                 </div>
                 <div class="session-date-info">
-                  <span class="session-date">${s.date}</span>
                   <a href="${s.url}" target="_blank" class="session-link">立即報名</a>
                 </div>
               </div>
@@ -537,9 +537,22 @@ function initSmoothScroll() {
 
 // ==================== 滾動動畫效果 ====================
 function initScrollAnimations() {
+  // 檢查瀏覽器是否支援 IntersectionObserver
+  if (!('IntersectionObserver' in window)) {
+    // 不支援時直接顯示所有元素
+    const animatedElements = document.querySelectorAll(
+      ".experience-item, .course-section"
+    );
+    animatedElements.forEach((el) => {
+      el.style.opacity = "1";
+      el.style.transform = "translateY(0)";
+    });
+    return;
+  }
+
   const observerOptions = {
-    threshold: 0.1,
-    rootMargin: "0px 0px -50px 0px",
+    threshold: 0.05,
+    rootMargin: "0px 0px -20px 0px",
   };
 
   const observer = new IntersectionObserver((entries) => {
@@ -547,6 +560,8 @@ function initScrollAnimations() {
       if (entry.isIntersecting) {
         entry.target.style.opacity = "1";
         entry.target.style.transform = "translateY(0)";
+        // 動畫完成後取消觀察，避免重複觸發
+        observer.unobserve(entry.target);
       }
     });
   }, observerOptions);
@@ -561,6 +576,16 @@ function initScrollAnimations() {
     el.style.transition = "opacity 0.6s ease, transform 0.6s ease";
     observer.observe(el);
   });
+
+  // 備用：3秒後強制顯示所有元素，防止動畫失效導致內容不顯示
+  setTimeout(() => {
+    animatedElements.forEach((el) => {
+      if (el.style.opacity === "0") {
+        el.style.opacity = "1";
+        el.style.transform = "translateY(0)";
+      }
+    });
+  }, 3000);
 }
 
 // ==================== 導航列滾動效果 ====================
