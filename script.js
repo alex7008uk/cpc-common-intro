@@ -700,7 +700,7 @@ const purchaseCourses = [
       {
         date: "03/13(五)",
         time: "09:30~16:30",
-        session: "第1梯次",
+        session: "第1梯次 確定開課",
         url: "https://store.cpc.org.tw/Train/Contents/TC7857",
       },
       {
