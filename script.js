@@ -58,7 +58,7 @@ const isoCourses = [
       {
         date: "02/05、06(四五)",
         time: "09:00~17:00",
-        session: "第1梯次",
+        session: "第1梯次 確定開課",
         url: "https://store.cpc.org.tw/Train/Contents/TC7951",
       },
       {
@@ -132,7 +132,7 @@ const isoCourses = [
       {
         date: "06/01、02(一二)",
         time: "09:00~17:00",
-        session: "第1梯次",
+        session: "第1梯次 確定開課",
         url: "https://store.cpc.org.tw/Train/Contents/TC8045",
       },
       {
@@ -149,7 +149,7 @@ const isoCourses = [
       {
         date: "01/20(二)",
         time: "09:00~17:00",
-        session: "第1梯次",
+        session: "第1梯次 確定開課",
         url: "https://store.cpc.org.tw/Train/Contents/TC7940",
       },
       {
@@ -700,7 +700,7 @@ const purchaseCourses = [
       {
         date: "03/13(五)",
         time: "09:30~16:30",
-        session: "第1梯次",
+        session: "第1梯次 確定開課",
         url: "https://store.cpc.org.tw/Train/Contents/TC7857",
       },
       {
