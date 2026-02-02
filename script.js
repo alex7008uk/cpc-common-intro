@@ -800,6 +800,7 @@ function renderCourses() {
   // 生成 ISO 系列課程區塊
   const isoSection = document.createElement("div");
   isoSection.className = "course-section";
+  isoSection.id = "iso-courses";
   isoSection.innerHTML = `
     <h3 class="course-category-title">ISO 系列課程推薦</h3>
     <div class="course-list">
@@ -839,6 +840,7 @@ function renderCourses() {
   // 生成行政總務系列課程區塊
   const adminSection = document.createElement("div");
   adminSection.className = "course-section";
+  adminSection.id = "admin-courses";
   adminSection.innerHTML = `
     <h3 class="course-category-title">行政總務系列課程推薦</h3>
     <div class="course-list">
@@ -878,6 +880,7 @@ function renderCourses() {
   // 生成採購系列課程區塊
   const purchaseSection = document.createElement("div");
   purchaseSection.className = "course-section";
+  purchaseSection.id = "purchase-courses";
   purchaseSection.innerHTML = `
     <h3 class="course-category-title">採購系列課程推薦</h3>
     <div class="course-list">
