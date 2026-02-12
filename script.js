@@ -250,7 +250,7 @@ const adminCourses = [
       {
         date: "03/02(一)",
         time: "09:30~16:30",
-        session: "第1梯次",
+        session: "第1梯次 確定開課",
         url: "https://store.cpc.org.tw/Train/Contents/TD3806",
       },
       {
@@ -655,7 +655,7 @@ const purchaseCourses = [
       {
         date: "03/04(三)",
         time: "09:30~16:30",
-        session: "第1梯次",
+        session: "第1梯次 確定開課",
         url: "https://store.cpc.org.tw/Train/Contents/TC8080",
       },
       {
@@ -715,9 +715,9 @@ const purchaseCourses = [
     title: "跨國採購實務解析與訣竅",
     sessions: [
       {
-        date: "01/23(五)",
+        date: "03/23(一)",
         time: "09:30~16:30",
-        session: "第1梯次",
+        session: "第1梯次 確定開課",
         url: "https://store.cpc.org.tw/Train/Contents/TC7860",
       },
       {
