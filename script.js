@@ -312,7 +312,7 @@ const adminCourses = [
       {
         date: "04/27(一)",
         time: "09:30~16:30",
-        session: "第1梯次",
+        session: "第1梯次 確定開課",
         url: "https://store.cpc.org.tw/Train/Contents/TC9631",
       },
       {
@@ -366,7 +366,7 @@ const purchaseCourses = [
       {
         date: "03/09(一)",
         time: "09:00~17:00",
-        session: "第1梯次",
+        session: "第1梯次 確定開課",
         url: "https://store.cpc.org.tw/Train/Contents/TC8570",
       },
       {
