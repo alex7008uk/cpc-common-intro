@@ -323,6 +323,7 @@ const adminCourses = [
       },
     ],
   },
+  {
     title: "契約生命週期管理與風險控管-從條文理解到爭議處理的全方位契約實務課程",
     sessions: [
       {
@@ -332,30 +333,14 @@ const adminCourses = [
         url: "https://store.cpc.org.tw/Train/Contents/TC9720",
       },
       {
-        date: "10/14(三)",
-        time: "09:30~16:30",
-        session: "第2梯次",
-        url: "https://store.cpc.org.tw/Train/Contents/TC9632",
-      },
-    ],
-  
-      title: "契約生命週期管理與風險控管-從條文理解到爭議處理的全方位契約實務課程",
-    sessions: [
-      {
         date: "10/23(五)",
         time: "09:30~16:30",
         session: "第2梯次",
-        url: "https://store.cpc.org.tw/Train/Contents/TC9631",
-      },
-      {
-        date: "10/14(三)",
-        time: "09:30~16:30",
-        session: "第2梯次",
         url: "https://store.cpc.org.tw/Train/Contents/TC9721",
-      },
-    ],
-   
-];
+       }
+       ]
+  }
+ ]
 
 // 採購系列課程推薦
 const purchaseCourses = [
