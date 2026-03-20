@@ -791,6 +791,522 @@ const purchaseCourses = [
   },
 ];
 
+// 研發系列課程推薦
+const rdCourses = [
+  {
+    title: "研發人員應有的設計理念與品質意識研習班",
+    sessions: [
+      { date: "03/11(三)", time: "09:30-16:30", session: "第1梯次", url: "https://store.cpc.org.tw/Train/Contents/TC9634" },
+      { date: "10/12(一)", time: "09:30-16:30", session: "第2梯次", url: "https://store.cpc.org.tw/Train/Contents/TC9635" },
+    ],
+  },
+  {
+    title: "研發成本管控與效益最大化研習班",
+    sessions: [
+      { date: "04/08(三)", time: "09:30-16:30", session: "第1梯次", url: "https://store.cpc.org.tw/Train/Contents/TC9636" },
+      { date: "11/04(三)", time: "09:30-16:30", session: "第2梯次", url: "https://store.cpc.org.tw/Train/Contents/TC9637" },
+    ],
+  },
+  {
+    title: "研發品質管理技巧研習班",
+    sessions: [
+      { date: "05/18(一)", time: "09:30-16:30", session: "第1梯次", url: "https://store.cpc.org.tw/Train/Contents/TC9638" },
+      { date: "09/18(五)", time: "09:30-16:30", session: "第2梯次", url: "https://store.cpc.org.tw/Train/Contents/TC9639" },
+    ],
+  },
+  {
+    title: "商品企劃與產品設計管理實務研習班",
+    sessions: [
+      { date: "08/19、26(三)", time: "09:30-16:30", session: "第2梯次", url: "https://store.cpc.org.tw/Train/Contents/TC9723" },
+    ],
+  },
+  {
+    title: "新產品開發到量產階段的品質工程管理",
+    sessions: [
+      { date: "04/28(二)", time: "09:30~16:30", session: "", url: "https://store.cpc.org.tw/Train/Contents/TC8535" },
+    ],
+  },
+  {
+    title: "新產品開發的日程控管方法與實務",
+    sessions: [
+      { date: "07/02(四)", time: "09:30~16:30", session: "", url: "https://store.cpc.org.tw/Train/Contents/TC8546" },
+    ],
+  },
+  {
+    title: "新產品開發的品質風險控管與問題預防",
+    sessions: [
+      { date: "08/10(一)", time: "09:30~16:30", session: "第2梯次", url: "https://store.cpc.org.tw/Train/Contents/TC8548" },
+    ],
+  },
+];
+
+// 品管系列課程推薦
+const qcCourses = [
+  {
+    title: "[套裝課程]IATF 16949 六大核心工具應用實務研習班",
+    sessions: [
+      { date: "04/09、10、17、20、23(一四五)", time: "09:00~17:00", session: "第2梯次", url: "https://store.cpc.org.tw/Train/Contents/TC8912" },
+      { date: "07/09、10、16、17、23(四五)", time: "09:00~17:00", session: "第3梯次", url: "https://store.cpc.org.tw/Train/Contents/TC8913" },
+      { date: "10/15、16、22、29、30(四五)", time: "09:00~17:00", session: "第4梯次", url: "https://store.cpc.org.tw/Train/Contents/TC8914" },
+    ],
+  },
+  {
+    title: "8D與三現的問題分析與解決工具",
+    sessions: [
+      { date: "04/27(一)", time: "09:00~17:00", session: "第1梯次", url: "https://store.cpc.org.tw/Train/Contents/TC8038" },
+      { date: "09/07(一)", time: "09:00~17:00", session: "第2梯次", url: "https://store.cpc.org.tw/Train/Contents/TC8039" },
+    ],
+  },
+  {
+    title: "AIAG-VDA FMEA 失效模式與效應分析",
+    sessions: [
+      { date: "04/17(五)", time: "09:00~17:00", session: "第2梯次", url: "https://store.cpc.org.tw/Train/Contents/TC7926" },
+      { date: "07/16(四)", time: "09:00~17:00", session: "第3梯次", url: "https://store.cpc.org.tw/Train/Contents/TC7927" },
+      { date: "10/22(四)", time: "09:00~17:00", session: "第4梯次", url: "https://store.cpc.org.tw/Train/Contents/TC7928" },
+    ],
+  },
+  {
+    title: "AI撰寫ISO文件教學方案講師班",
+    sessions: [
+      { date: "04/08(三)", time: "09:00~17:00", session: "第1梯次", url: "https://store.cpc.org.tw/Train/Contents/TD0619" },
+      { date: "07/06(一)", time: "09:00~17:00", session: "第2梯次", url: "https://store.cpc.org.tw/Train/Contents/TD0622" },
+      { date: "11/05(四)", time: "09:00~17:00", session: "第3梯次", url: "https://store.cpc.org.tw/Train/Contents/TD0623" },
+    ],
+  },
+  {
+    title: "APQP先期產品品質規劃",
+    sessions: [
+      { date: "04/09(四)", time: "09:00~17:00", session: "第2梯次", url: "https://store.cpc.org.tw/Train/Contents/TC7887" },
+      { date: "07/09(四)", time: "09:00~17:00", session: "第3梯次", url: "https://store.cpc.org.tw/Train/Contents/TC7888" },
+      { date: "10/15(四)", time: "09:00~17:00", session: "第4梯次", url: "https://store.cpc.org.tw/Train/Contents/TC7889" },
+    ],
+  },
+  {
+    title: "CP管制計畫& PPAP零組件核准程序",
+    sessions: [
+      { date: "01/09(五)", time: "09:00~17:00", session: "第1梯次", url: "https://store.cpc.org.tw/Train/Contents/TC7919" },
+      { date: "04/10(五)", time: "09:00~17:00", session: "第2梯次", url: "https://store.cpc.org.tw/Train/Contents/TC7920" },
+      { date: "07/10(五)", time: "09:00~17:00", session: "第3梯次", url: "https://store.cpc.org.tw/Train/Contents/TC7921" },
+      { date: "10/16(五)", time: "09:00~17:00", session: "第4梯次", url: "https://store.cpc.org.tw/Train/Contents/TC7922" },
+    ],
+  },
+  {
+    title: "CQT品質技術師培訓班",
+    sessions: [
+      { date: "03/14~06/06(六)", time: "09:00-16:30", session: "第1梯次", url: "https://store.cpc.org.tw/Train/Contents/TD1388" },
+      { date: "07/04~09/05(六)", time: "09:00-16:30", session: "第2梯次", url: "https://store.cpc.org.tw/Train/Contents/TD1389" },
+      { date: "09/12~12/12(六)", time: "09:00-16:30", session: "第3梯次", url: "https://store.cpc.org.tw/Train/Contents/TD1390" },
+    ],
+  },
+  {
+    title: "DOE實驗設計",
+    sessions: [
+      { date: "03/19(四)", time: "08:40~17:40", session: "第1梯次", url: "https://store.cpc.org.tw/Train/Contents/TC8024" },
+      { date: "08/25(二)", time: "08:40~17:40", session: "第2梯次", url: "https://store.cpc.org.tw/Train/Contents/TC8025" },
+      { date: "12/07(一)", time: "08:40~17:40", session: "第3梯次", url: "https://store.cpc.org.tw/Train/Contents/TC8026" },
+    ],
+  },
+  {
+    title: "Gen AI 驅動的品質管理工作流實戰",
+    sessions: [
+      { date: "06/17、18、24、25(三四)", time: "09:00-17:00", session: "", url: "https://store.cpc.org.tw/Train/Contents/TD3578" },
+    ],
+  },
+  {
+    title: "IATF 16949:2016 內部稽核員培訓",
+    sessions: [
+      { date: "02/05、06(四五)", time: "09:00~17:00", session: "第1梯次", url: "https://store.cpc.org.tw/Train/Contents/TC7951" },
+      { date: "05/11、12(一二)", time: "09:00~17:00", session: "第2梯次", url: "https://store.cpc.org.tw/Train/Contents/TC7952" },
+      { date: "08/03、04(一二)", time: "09:00~17:00", session: "第3梯次", url: "https://store.cpc.org.tw/Train/Contents/TC7953" },
+      { date: "12/01、02(二三)", time: "09:00~17:00", session: "第4梯次", url: "https://store.cpc.org.tw/Train/Contents/TC7954" },
+    ],
+  },
+  {
+    title: "IATF 16949的供應鏈的選擇、績效評核與稽核方法",
+    sessions: [
+      { date: "06/03(三)", time: "09:30~16:30", session: "第2梯次", url: "https://store.cpc.org.tw/Train/Contents/TC8544" },
+    ],
+  },
+  {
+    title: "IE手法與生產作業改善技巧研習班",
+    sessions: [
+      { date: "05/04(一)", time: "09:00~17:00", session: "第1梯次", url: "https://store.cpc.org.tw/Train/Contents/TC8029" },
+      { date: "09/22(二)", time: "09:00~17:00", session: "第2梯次", url: "https://store.cpc.org.tw/Train/Contents/TC8030" },
+    ],
+  },
+  {
+    title: "ISO 22000：2018食品安全管理系統內部稽核員訓練",
+    sessions: [
+      { date: "09/15、16(二三)", time: "09:30~16:30", session: "", url: "https://store.cpc.org.tw/Train/Contents/TC8587" },
+    ],
+  },
+  {
+    title: "ISO 9001:2015 內部稽核實務",
+    sessions: [
+      { date: "09/14、15(一二)", time: "09:00~17:00", session: "第2梯次", url: "https://store.cpc.org.tw/Train/Contents/TC7950" },
+    ],
+  },
+  {
+    title: "ISO9001&ISO14001&ISO45001三合一整合型內部稽核員訓練",
+    sessions: [
+      { date: "06/01、02(一二)", time: "09:00~17:00", session: "第1梯次", url: "https://store.cpc.org.tw/Train/Contents/TC8045" },
+      { date: "12/14、15(一二)", time: "09:00~17:00", session: "第2梯次", url: "https://store.cpc.org.tw/Train/Contents/TC8046" },
+    ],
+  },
+  {
+    title: "ISO9001及IATF 16949 量測儀器校正管理實務",
+    sessions: [
+      { date: "01/20(二)", time: "09:00~17:00", session: "第1梯次", url: "https://store.cpc.org.tw/Train/Contents/TC7940" },
+      { date: "04/13(一)", time: "09:00~17:00", session: "第2梯次", url: "https://store.cpc.org.tw/Train/Contents/TC7941" },
+      { date: "05/30(六)", time: "09:00~17:00", session: "第3梯次", url: "https://store.cpc.org.tw/Train/Contents/TC7942" },
+      { date: "07/13(一)", time: "09:00~17:00", session: "第4梯次", url: "https://store.cpc.org.tw/Train/Contents/TC7943" },
+      { date: "10/05(一)", time: "09:00~17:00", session: "第5梯次", url: "https://store.cpc.org.tw/Train/Contents/TC7944" },
+    ],
+  },
+  {
+    title: "ISO文件管理及標準化建立技巧研習班",
+    sessions: [
+      { date: "05/25(一)", time: "09:00~17:00", session: "第2梯次", url: "https://store.cpc.org.tw/Train/Contents/TC8043" },
+      { date: "08/07(五)", time: "09:00~17:00", session: "第3梯次", url: "https://store.cpc.org.tw/Train/Contents/TC8044" },
+    ],
+  },
+  {
+    title: "MSA 量測系統分析",
+    sessions: [
+      { date: "04/23(四)", time: "09:00~17:00", session: "第2梯次", url: "https://store.cpc.org.tw/Train/Contents/TC7935" },
+      { date: "07/23(四)", time: "09:00~17:00", session: "第3梯次", url: "https://store.cpc.org.tw/Train/Contents/TC7936" },
+      { date: "10/30(五)", time: "09:00~17:00", session: "第4梯次", url: "https://store.cpc.org.tw/Train/Contents/TC7937" },
+    ],
+  },
+  {
+    title: "SPC 統計製程管制",
+    sessions: [
+      { date: "04/20(一)", time: "09:00~17:00", session: "第2梯次", url: "https://store.cpc.org.tw/Train/Contents/TC7930" },
+      { date: "07/17(五)", time: "09:00~17:00", session: "第3梯次", url: "https://store.cpc.org.tw/Train/Contents/TC7931" },
+      { date: "10/29(四)", time: "09:00~17:00", session: "第4梯次", url: "https://store.cpc.org.tw/Train/Contents/TC7932" },
+    ],
+  },
+  {
+    title: "VDA 6.3:2023製程稽核人員訓練",
+    sessions: [
+      { date: "06/11、12(四五)", time: "09:00~17:00", session: "第1梯次", url: "https://store.cpc.org.tw/Train/Contents/TC8040" },
+      { date: "11/23、24(一二)", time: "09:00~17:00", session: "第2梯次", url: "https://store.cpc.org.tw/Train/Contents/TC8041" },
+    ],
+  },
+  {
+    title: "企業導入品管圈（QCC）實務",
+    sessions: [
+      { date: "05/19(二)", time: "09:00-17:00", session: "第1梯次", url: "https://store.cpc.org.tw/Train/Contents/TC8882" },
+      { date: "09/23(三)", time: "09:00-17:00", session: "第2梯次", url: "https://store.cpc.org.tw/Train/Contents/TC8883" },
+    ],
+  },
+  {
+    title: "全方位生產管理手法研習",
+    sessions: [
+      { date: "09/04(五)", time: "09:00~17:00", session: "第2梯次", url: "https://store.cpc.org.tw/Train/Contents/TC8032" },
+    ],
+  },
+  {
+    title: "系統化的現場製程品質管理實務",
+    sessions: [
+      { date: "05/04(一)", time: "09:00~17:00", session: "第1梯次", url: "https://store.cpc.org.tw/Train/Contents/TC8536" },
+      { date: "10/08(四)", time: "09:00~17:00", session: "第2梯次", url: "https://store.cpc.org.tw/Train/Contents/TC8537" },
+    ],
+  },
+  {
+    title: "防錯法(Fool Proof)在實務上之應用",
+    sessions: [
+      { date: "05/19(二)", time: "09:30~17:30", session: "第1梯次", url: "https://store.cpc.org.tw/Train/Contents/TD0827" },
+      { date: "08/18(二)", time: "09:30~17:30", session: "第2梯次", url: "https://store.cpc.org.tw/Train/Contents/TD0828" },
+    ],
+  },
+  {
+    title: "供應商品質管理實務研習班",
+    sessions: [
+      { date: "07/24(五)", time: "09:00~17:00", session: "第2梯次", url: "https://store.cpc.org.tw/Train/Contents/TC8022" },
+      { date: "11/06(五)", time: "09:00~17:00", session: "第3梯次", url: "https://store.cpc.org.tw/Train/Contents/TC8023" },
+    ],
+  },
+  {
+    title: "品質改善活動推行實務",
+    sessions: [
+      { date: "04/22(三)", time: "09:00~17:00", session: "第1梯次", url: "https://store.cpc.org.tw/Train/Contents/TC8531" },
+      { date: "09/11(五)", time: "09:00~17:00", session: "第2梯次", url: "https://store.cpc.org.tw/Train/Contents/TC8532" },
+    ],
+  },
+  {
+    title: "品質策略與方針展開",
+    sessions: [
+      { date: "09/29(二)", time: "09:30~16:30", session: "", url: "https://store.cpc.org.tw/Train/Contents/TC8542" },
+    ],
+  },
+  {
+    title: "品質管理幹部精鍊班",
+    sessions: [
+      { date: "07/07、14、21(二)", time: "09:30~16:30", session: "第2梯次", url: "https://store.cpc.org.tw/Train/Contents/TC9072" },
+    ],
+  },
+  {
+    title: "食品工廠設計與規劃",
+    sessions: [
+      { date: "05/21、22(四五)", time: "09:30~16:30", session: "第1梯次", url: "https://store.cpc.org.tw/Train/Contents/TC7881" },
+      { date: "08/27、28(四五)", time: "09:30~16:30", session: "第2梯次", url: "https://store.cpc.org.tw/Train/Contents/TC7882" },
+      { date: "11/05、06(四五)", time: "09:30~16:30", session: "第3梯次", url: "https://store.cpc.org.tw/Train/Contents/TC7883" },
+    ],
+  },
+  {
+    title: "產品品質特殊特性CC/SC的鑑別、管理與監控",
+    sessions: [
+      { date: "07/31(五)", time: "09:30~16:30", session: "第2梯次", url: "https://store.cpc.org.tw/Train/Contents/TC8554" },
+    ],
+  },
+  {
+    title: "新QC七大手法應用實務",
+    sessions: [
+      { date: "09/21(一)", time: "09:00~17:00", session: "", url: "https://store.cpc.org.tw/Train/Contents/TC8028" },
+    ],
+  },
+  {
+    title: "製造現場的變化點管理",
+    sessions: [
+      { date: "03/19(四)", time: "09:00~17:00", session: "第1梯次", url: "https://store.cpc.org.tw/Train/Contents/TC8533" },
+      { date: "09/01(二)", time: "09:00~17:00", session: "第2梯次", url: "https://store.cpc.org.tw/Train/Contents/TC8534" },
+    ],
+  },
+  {
+    title: "製造現場品質向上提升的技法",
+    sessions: [
+      { date: "09/30(三)", time: "09:30~16:30", session: "第2梯次", url: "https://store.cpc.org.tw/Train/Contents/TC8191" },
+    ],
+  },
+  {
+    title: "製造現場品質風險評估與監控管理實務",
+    sessions: [
+      { date: "04/16(四)", time: "09:30~16:30", session: "", url: "https://store.cpc.org.tw/Train/Contents/TC8549" },
+    ],
+  },
+  {
+    title: "製造現場幹部技能培訓",
+    sessions: [
+      { date: "03/30(一)", time: "09:00~17:00", session: "第1梯次", url: "https://store.cpc.org.tw/Train/Contents/TC8036" },
+      { date: "08/21(五)", time: "09:00~17:00", session: "第2梯次", url: "https://store.cpc.org.tw/Train/Contents/TC8859" },
+      { date: "11/13(五)", time: "09:00~17:00", session: "第3梯次", url: "https://store.cpc.org.tw/Train/Contents/TC8037" },
+    ],
+  },
+  {
+    title: "製造業客訴調查、解析、對策實戰",
+    sessions: [
+      { date: "08/28(五)", time: "09:00~17:00", session: "第2梯次", url: "https://store.cpc.org.tw/Train/Contents/TC8529" },
+    ],
+  },
+];
+
+// 生產系列課程推薦
+const productionCourses = [
+  {
+    title: "7S管理實務(5S+安全+節約)",
+    sessions: [
+      { date: "05/19(二)", time: "09:30~16:30", session: "第1梯次", url: "https://store.cpc.org.tw/Train/Contents/TC8480" },
+      { date: "10/30(五)", time: "09:30~16:30", session: "第2梯次", url: "https://store.cpc.org.tw/Train/Contents/TC8484" },
+    ],
+  },
+  {
+    title: "ERP與MES展開與運作實務",
+    sessions: [
+      { date: "06/04(四)", time: "09:30~16:30", session: "第2梯次", url: "https://store.cpc.org.tw/Train/Contents/TC7774" },
+      { date: "09/10(四)", time: "09:30~16:30", session: "第3梯次", url: "https://store.cpc.org.tw/Train/Contents/TC7775" },
+      { date: "12/17(四)", time: "09:30~16:30", session: "第4梯次", url: "https://store.cpc.org.tw/Train/Contents/TC7776" },
+    ],
+  },
+  {
+    title: "人員管理流程再造",
+    sessions: [
+      { date: "07/29(三)", time: "09:30~16:30", session: "第2梯次", url: "https://store.cpc.org.tw/Train/Contents/TC9411" },
+    ],
+  },
+  {
+    title: "工作流程改善與問題分析解決",
+    sessions: [
+      { date: "04/22(三)", time: "09:30~16:30", session: "第1梯次", url: "https://store.cpc.org.tw/Train/Contents/TC8115" },
+      { date: "09/22(二)", time: "09:30~16:30", session: "第2梯次", url: "https://store.cpc.org.tw/Train/Contents/TC8116" },
+    ],
+  },
+  {
+    title: "工作管理與執行力提昇技巧班",
+    sessions: [
+      { date: "06/30(二)", time: "09:30~16:30", session: "第1梯次", url: "https://store.cpc.org.tw/Train/Contents/TC8109" },
+      { date: "10/22(四)", time: "09:30~16:30", session: "第2梯次", url: "https://store.cpc.org.tw/Train/Contents/TC8110" },
+    ],
+  },
+  {
+    title: "工廠佈置規劃與工業4.0",
+    sessions: [
+      { date: "05/14(四)", time: "09:30~16:30", session: "第2梯次", url: "https://store.cpc.org.tw/Train/Contents/TC7770" },
+      { date: "09/03(四)", time: "09:30~16:30", session: "第3梯次", url: "https://store.cpc.org.tw/Train/Contents/TC7771" },
+      { date: "12/10(四)", time: "09:30~16:30", session: "第4梯次", url: "https://store.cpc.org.tw/Train/Contents/TC7772" },
+    ],
+  },
+  {
+    title: "工廠物流管理技巧實務研習班",
+    sessions: [
+      { date: "07/20(一)", time: "09:30~16:30", session: "", url: "https://store.cpc.org.tw/Train/Contents/TC8108" },
+    ],
+  },
+  {
+    title: "中階主管管理才能研習班",
+    sessions: [
+      { date: "07/21、22(二三)", time: "09:30~16:30", session: "", url: "https://store.cpc.org.tw/Train/Contents/TC8111" },
+    ],
+  },
+  {
+    title: "生產現場主管之走動式管理技巧",
+    sessions: [
+      { date: "07/31(五)", time: "09:30~16:30", session: "第2梯次", url: "https://store.cpc.org.tw/Train/Contents/TC8574" },
+      { date: "10/23(五)", time: "09:30~16:30", session: "第3梯次", url: "https://store.cpc.org.tw/Train/Contents/TC8575" },
+    ],
+  },
+  {
+    title: "生產管理法-交期、品質、成本、機台、備料、流程管控效益",
+    sessions: [
+      { date: "04/02(四)", time: "09:30~16:30", session: "第1梯次", url: "https://store.cpc.org.tw/Train/Contents/TC8084" },
+      { date: "07/14(二)", time: "09:30~16:30", session: "第2梯次", url: "https://store.cpc.org.tw/Train/Contents/TC8085" },
+    ],
+  },
+  {
+    title: "生產管理幹部精鍊班",
+    sessions: [
+      { date: "04/14、21、28(二)", time: "09:30~16:30", session: "第1梯次", url: "https://store.cpc.org.tw/Train/Contents/TC9069" },
+      { date: "08/05、12、19(三)", time: "09:30~16:30", session: "第2梯次", url: "https://store.cpc.org.tw/Train/Contents/TC9070" },
+    ],
+  },
+  {
+    title: "生產線管理運作實務",
+    sessions: [
+      { date: "05/07(四)", time: "09:30~16:30", session: "第2梯次", url: "https://store.cpc.org.tw/Train/Contents/TC7765" },
+      { date: "08/06(四)", time: "09:30~16:30", session: "第3梯次", url: "https://store.cpc.org.tw/Train/Contents/TC7766" },
+      { date: "12/03(四)", time: "09:30~16:30", session: "第4梯次", url: "https://store.cpc.org.tw/Train/Contents/TC7767" },
+    ],
+  },
+  {
+    title: "企業如何落實現場品管與製程改善研習班",
+    sessions: [
+      { date: "04/02(四)", time: "09:30~16:30", session: "第1梯次", url: "https://store.cpc.org.tw/Train/Contents/TC7783" },
+      { date: "07/09(四)", time: "09:30~16:30", session: "第2梯次", url: "https://store.cpc.org.tw/Train/Contents/TC7784" },
+      { date: "10/15(四)", time: "09:30~16:30", session: "第3梯次", url: "https://store.cpc.org.tw/Train/Contents/TC7785" },
+    ],
+  },
+  {
+    title: "如何做好現場管理與改善",
+    sessions: [
+      { date: "07/30(四)", time: "09:30~16:30", session: "第1梯次", url: "https://store.cpc.org.tw/Train/Contents/TC8485" },
+      { date: "10/01(四)", time: "09:30~16:30", session: "第2梯次", url: "https://store.cpc.org.tw/Train/Contents/TC8486" },
+    ],
+  },
+  {
+    title: "如何運用三T(TPS.TPM.TQM)工具提升管理績效",
+    sessions: [
+      { date: "06/03(三)", time: "09:30~16:30", session: "第1梯次", url: "https://store.cpc.org.tw/Train/Contents/TD0840" },
+      { date: "10/20(二)", time: "09:30~16:30", session: "第2梯次", url: "https://store.cpc.org.tw/Train/Contents/TD0840" },
+    ],
+  },
+  {
+    title: "物管、倉管及庫存管理運作實務",
+    sessions: [
+      { date: "03/12(四)", time: "09:30~16:30", session: "第1梯次", url: "https://store.cpc.org.tw/Train/Contents/TC7780" },
+      { date: "07/02(四)", time: "09:30~16:30", session: "第2梯次", url: "https://store.cpc.org.tw/Train/Contents/TC7781" },
+      { date: "10/08(四)", time: "09:30~16:30", session: "第3梯次", url: "https://store.cpc.org.tw/Train/Contents/TC7782" },
+    ],
+  },
+  {
+    title: "非車廠製造業如何善用精實管理創造效能",
+    sessions: [
+      { date: "07/28(二)", time: "09:30~16:30", session: "", url: "https://store.cpc.org.tw/Train/Contents/TC8185" },
+    ],
+  },
+  {
+    title: "訂單、產能與排程運作實務",
+    sessions: [
+      { date: "06/11(四)", time: "09:30~16:30", session: "第2梯次", url: "https://store.cpc.org.tw/Train/Contents/TC7778" },
+      { date: "10/01(四)", time: "09:30~16:30", session: "第3梯次", url: "https://store.cpc.org.tw/Train/Contents/TC7779" },
+    ],
+  },
+  {
+    title: "倉儲作業管理改善與實例研討",
+    sessions: [
+      { date: "04/20(一)", time: "09:30~16:30", session: "第1梯次", url: "https://store.cpc.org.tw/Train/Contents/TC8082" },
+      { date: "09/23(三)", time: "09:30~16:30", session: "第2梯次", url: "https://store.cpc.org.tw/Train/Contents/TC8083" },
+    ],
+  },
+  {
+    title: "倉儲管理與存貨決策",
+    sessions: [
+      { date: "04/30(四)", time: "09:30~16:30", session: "第1梯次", url: "https://store.cpc.org.tw/Train/Contents/TC8584" },
+      { date: "07/27(一)", time: "09:30~16:30", session: "第2梯次", url: "https://store.cpc.org.tw/Train/Contents/TC8586" },
+    ],
+  },
+  {
+    title: "庫存與倉儲管理實務研習班",
+    sessions: [
+      { date: "03/31(二)", time: "09:30~16:30", session: "第1梯次", url: "https://store.cpc.org.tw/Train/Contents/TC8104" },
+      { date: "10/29(四)", time: "09:30~16:30", session: "第2梯次", url: "https://store.cpc.org.tw/Train/Contents/TC8107" },
+    ],
+  },
+  {
+    title: "效率化倉儲管理能力培訓",
+    sessions: [
+      { date: "08/26(三)", time: "09:00~17:00", session: "第2梯次", url: "https://store.cpc.org.tw/Train/Contents/TC9413" },
+    ],
+  },
+  {
+    title: "基層幹部如何强化管理能力提升企業競爭力",
+    sessions: [
+      { date: "04/09(四)", time: "09:30~16:30", session: "第1梯次", url: "https://store.cpc.org.tw/Train/Contents/TC7786" },
+      { date: "07/16(四)", time: "09:30~16:30", session: "第2梯次", url: "https://store.cpc.org.tw/Train/Contents/TC7787" },
+      { date: "11/05(四)", time: "09:30~16:30", session: "第3梯次", url: "https://store.cpc.org.tw/Train/Contents/TC7788" },
+    ],
+  },
+  {
+    title: "現場問題的反應與處置",
+    sessions: [
+      { date: "09/07(一)", time: "09:30~16:30", session: "第2梯次", url: "https://store.cpc.org.tw/Train/Contents/TC8118" },
+    ],
+  },
+  {
+    title: "提昇生管價值~做好產銷協調以滿足出貨達交率研習班",
+    sessions: [
+      { date: "05/06(三)", time: "09:30-16:30", session: "第1梯次", url: "https://store.cpc.org.tw/Train/Contents/TD0334" },
+      { date: "09/16(三)", time: "09:30-16:30", session: "第2梯次", url: "https://store.cpc.org.tw/Train/Contents/TD0335" },
+    ],
+  },
+  {
+    title: "精實生產管理-7大浪費鑑別與改善",
+    sessions: [
+      { date: "08/04(二)", time: "09:00-17:00", session: "第2梯次", url: "https://store.cpc.org.tw/Train/Contents/TC8858" },
+    ],
+  },
+  {
+    title: "精實管理-價值流分析與少量多樣混線生產機制",
+    sessions: [
+      { date: "04/24(五)", time: "09:00-17:00", session: "第1梯次", url: "https://store.cpc.org.tw/Train/Contents/TC8860" },
+      { date: "10/27(二)", time: "09:00-17:00", session: "第2梯次", url: "https://store.cpc.org.tw/Train/Contents/TC8861" },
+    ],
+  },
+  {
+    title: "綠色生產力-永續考量的問題分析與解決能力",
+    sessions: [
+      { date: "04/15(三)", time: "09:30~16:30", session: "第1梯次", url: "https://store.cpc.org.tw/Train/Contents/TC9414" },
+      { date: "09/24(四)", time: "09:30~16:30", session: "第2梯次", url: "https://store.cpc.org.tw/Train/Contents/TC9415" },
+    ],
+  },
+  {
+    title: "豐田式生產管理-精實生產導入少量多樣之排程應對",
+    sessions: [
+      { date: "04/13(一)", time: "09:30~16:30", session: "第1梯次", url: "https://store.cpc.org.tw/Train/Contents/TC8112" },
+      { date: "08/24(一)", time: "09:30~16:30", session: "第2梯次", url: "https://store.cpc.org.tw/Train/Contents/TC8113" },
+    ],
+  },
+];
+
 // ==================== 生成經歷區塊 ====================
 function renderExperiences() {
   const aboutContent = document.getElementById("aboutContent");
@@ -813,46 +1329,6 @@ function renderExperiences() {
 // ==================== 生成課程卡片 ====================
 function renderCourses() {
   const coursesGrid = document.getElementById("coursesGrid");
-
-  // 生成 ISO 系列課程區塊
-  const isoSection = document.createElement("div");
-  isoSection.className = "course-section";
-  isoSection.id = "iso-courses";
-  isoSection.innerHTML = `
-    <h3 class="course-category-title">ISO 系列課程推薦</h3>
-    <div class="course-list">
-      ${isoCourses
-        .map(
-          (course) => `
-        <div class="course-item course-item-no-image">
-          <div class="course-header">
-            <div class="course-title-text">${course.title}</div>
-          </div>
-          <div class="course-sessions">
-            ${course.sessions
-              .map(
-                (s) => `
-              <div class="session-item">
-                <div class="session-info">
-                  <span class="session-number">${s.session}</span>
-                  <span class="session-date">${s.date}</span>
-                  <span class="session-time">${s.time}</span>
-                </div>
-                <div class="session-date-info">
-                  <a href="${s.url}" target="_blank" class="session-link">立即報名</a>
-                </div>
-              </div>
-            `,
-              )
-              .join("")}
-          </div>
-        </div>
-      `,
-        )
-        .join("")}
-    </div>
-  `;
-  coursesGrid.appendChild(isoSection);
 
   // 生成行政總務系列課程區塊
   const adminSection = document.createElement("div");
@@ -933,6 +1409,126 @@ function renderCourses() {
     </div>
   `;
   coursesGrid.appendChild(purchaseSection);
+
+  // 生成研發系列課程區塊
+  const rdSection = document.createElement("div");
+  rdSection.className = "course-section";
+  rdSection.id = "rd-courses";
+  rdSection.innerHTML = `
+    <h3 class="course-category-title">研發系列課程推薦</h3>
+    <div class="course-list">
+      ${rdCourses
+        .map(
+          (course) => `
+        <div class="course-item course-item-no-image">
+          <div class="course-header">
+            <div class="course-title-text">${course.title}</div>
+          </div>
+          <div class="course-sessions">
+            ${course.sessions
+              .map(
+                (s) => `
+              <div class="session-item">
+                <div class="session-info">
+                  <span class="session-number">${s.session}</span>
+                  <span class="session-date">${s.date}</span>
+                  <span class="session-time">${s.time}</span>
+                </div>
+                <div class="session-date-info">
+                  <a href="${s.url}" target="_blank" class="session-link">立即報名</a>
+                </div>
+              </div>
+            `,
+              )
+              .join("")}
+          </div>
+        </div>
+      `,
+        )
+        .join("")}
+    </div>
+  `;
+  coursesGrid.appendChild(rdSection);
+
+  // 生成品管系列課程區塊
+  const qcSection = document.createElement("div");
+  qcSection.className = "course-section";
+  qcSection.id = "qc-courses";
+  qcSection.innerHTML = `
+    <h3 class="course-category-title">品管(ISO)系列課程推薦</h3>
+    <div class="course-list">
+      ${qcCourses
+        .map(
+          (course) => `
+        <div class="course-item course-item-no-image">
+          <div class="course-header">
+            <div class="course-title-text">${course.title}</div>
+          </div>
+          <div class="course-sessions">
+            ${course.sessions
+              .map(
+                (s) => `
+              <div class="session-item">
+                <div class="session-info">
+                  <span class="session-number">${s.session}</span>
+                  <span class="session-date">${s.date}</span>
+                  <span class="session-time">${s.time}</span>
+                </div>
+                <div class="session-date-info">
+                  <a href="${s.url}" target="_blank" class="session-link">立即報名</a>
+                </div>
+              </div>
+            `,
+              )
+              .join("")}
+          </div>
+        </div>
+      `,
+        )
+        .join("")}
+    </div>
+  `;
+  coursesGrid.appendChild(qcSection);
+
+  // 生成生產系列課程區塊
+  const productionSection = document.createElement("div");
+  productionSection.className = "course-section";
+  productionSection.id = "production-courses";
+  productionSection.innerHTML = `
+    <h3 class="course-category-title">生產系列課程推薦</h3>
+    <div class="course-list">
+      ${productionCourses
+        .map(
+          (course) => `
+        <div class="course-item course-item-no-image">
+          <div class="course-header">
+            <div class="course-title-text">${course.title}</div>
+          </div>
+          <div class="course-sessions">
+            ${course.sessions
+              .map(
+                (s) => `
+              <div class="session-item">
+                <div class="session-info">
+                  <span class="session-number">${s.session}</span>
+                  <span class="session-date">${s.date}</span>
+                  <span class="session-time">${s.time}</span>
+                </div>
+                <div class="session-date-info">
+                  <a href="${s.url}" target="_blank" class="session-link">立即報名</a>
+                </div>
+              </div>
+            `,
+              )
+              .join("")}
+          </div>
+        </div>
+      `,
+        )
+        .join("")}
+    </div>
+  `;
+  coursesGrid.appendChild(productionSection);
 }
 
 // ==================== 平滑滾動效果 ====================
@@ -1043,7 +1639,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   console.log("✅ 網站已成功載入!");
   console.log(`📚 共載入 ${experiences.length} 項經歷`);
-  console.log(`🎓 ISO 系列課程: ${isoCourses.length} 門`);
   console.log(`🎓 行政總務系列課程: ${adminCourses.length} 門`);
   console.log(`🎓 採購系列課程: ${purchaseCourses.length} 門`);
+  console.log(`🎓 研發系列課程: ${rdCourses.length} 門`);
+  console.log(`🎓 品管系列課程: ${qcCourses.length} 門`);
+  console.log(`🎓 生產系列課程: ${productionCourses.length} 門`);
 });
