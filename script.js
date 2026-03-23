@@ -1624,6 +1624,16 @@ function initNavbarScroll() {
 
 // ==================== 初始化所有功能 ====================
 document.addEventListener("DOMContentLoaded", () => {
+  // 漢堡選單 toggle
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.querySelector('.nav-links');
+  if (hamburger) {
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+      hamburger.classList.toggle('active');
+    });
+  }
+
   // 生成內容
   // renderExperiences(); // 已改為直接在 HTML 中顯示講師介紹
   renderCourses();
