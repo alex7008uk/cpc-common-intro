@@ -510,7 +510,7 @@ const purchaseCourses = [
     title: "基礎到菁英的採購工作實務班",
     sessions: [
       {
-        date: "04/10(五)",
+        date: "06/29(一)",
         time: "09:30~16:30",
         session: "第1梯次",
         url: "https://store.cpc.org.tw/Train/Contents/TC7856",
