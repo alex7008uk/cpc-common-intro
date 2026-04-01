@@ -153,7 +153,7 @@ const isoCourses = [
         url: "https://store.cpc.org.tw/Train/Contents/TC7940",
       },
       {
-        date: "04/13(一)",
+        date: "04/13(一)確定開課",
         time: "09:00~17:00",
         session: "第2梯次",
         url: "https://store.cpc.org.tw/Train/Contents/TC7941",
@@ -184,7 +184,7 @@ const isoCourses = [
       {
         date: "05/25(一)",
         time: "09:00~17:00",
-        session: "第2梯次",
+        session: "第2梯次 確定開課",
         url: "https://store.cpc.org.tw/Train/Contents/TC8043",
       },
       {
@@ -454,7 +454,7 @@ const purchaseCourses = [
     title: "供應商開發與管理完全指南",
     sessions: [
       {
-        date: "09/02(三)",
+        date: "09/02(三) 確定開課",
         time: "09:30~16:30",
         session: "第1梯次",
         url: "https://store.cpc.org.tw/Train/Contents/TC7863",
@@ -609,7 +609,7 @@ const purchaseCourses = [
     title: "採購成本控制技巧與方法",
     sessions: [
       {
-        date: "05/12(二)",
+        date: "05/12(二) 確定開課",
         time: "09:30~16:30",
         session: "第1梯次",
         url: "https://store.cpc.org.tw/Train/Contents/TC7859",
@@ -771,7 +771,7 @@ const purchaseCourses = [
     title: "競爭性報價規劃與執行實務",
     sessions: [
       {
-        date: "08/26(三)",
+        date: "08/26(三) 確定開課",
         time: "09:30~16:30",
         session: "第1梯次",
         url: "https://store.cpc.org.tw/Train/Contents/TC7862",
@@ -803,7 +803,7 @@ const rdCourses = [
   {
     title: "研發成本管控與效益最大化研習班",
     sessions: [
-      { date: "04/08(三)", time: "09:30-16:30", session: "第1梯次", url: "https://store.cpc.org.tw/Train/Contents/TC9636" },
+      { date: "04/08(三) 確定開課", time: "09:30-16:30", session: "第1梯次", url: "https://store.cpc.org.tw/Train/Contents/TC9636" },
       { date: "11/04(三)", time: "09:30-16:30", session: "第2梯次", url: "https://store.cpc.org.tw/Train/Contents/TC9637" },
     ],
   },
@@ -835,7 +835,7 @@ const rdCourses = [
   {
     title: "新產品開發的品質風險控管與問題預防",
     sessions: [
-      { date: "08/10(一)", time: "09:30~16:30", session: "第2梯次", url: "https://store.cpc.org.tw/Train/Contents/TC8548" },
+      { date: "08/10(一) 確定開課", time: "09:30~16:30", session: "第2梯次", url: "https://store.cpc.org.tw/Train/Contents/TC8548" },
     ],
   },
 ];
@@ -853,14 +853,14 @@ const qcCourses = [
   {
     title: "8D與三現的問題分析與解決工具",
     sessions: [
-      { date: "04/27(一)", time: "09:00~17:00", session: "第1梯次", url: "https://store.cpc.org.tw/Train/Contents/TC8038" },
+      { date: "04/27(一)確定開課", time: "09:00~17:00", session: "第1梯次", url: "https://store.cpc.org.tw/Train/Contents/TC8038" },
       { date: "09/07(一)", time: "09:00~17:00", session: "第2梯次", url: "https://store.cpc.org.tw/Train/Contents/TC8039" },
     ],
   },
   {
     title: "AIAG-VDA FMEA 失效模式與效應分析",
     sessions: [
-      { date: "04/17(五)", time: "09:00~17:00", session: "第2梯次", url: "https://store.cpc.org.tw/Train/Contents/TC7926" },
+      { date: "04/17(五)確定開課", time: "09:00~17:00", session: "第2梯次", url: "https://store.cpc.org.tw/Train/Contents/TC7926" },
       { date: "07/16(四)", time: "09:00~17:00", session: "第3梯次", url: "https://store.cpc.org.tw/Train/Contents/TC7927" },
       { date: "10/22(四)", time: "09:00~17:00", session: "第4梯次", url: "https://store.cpc.org.tw/Train/Contents/TC7928" },
     ],
@@ -885,7 +885,7 @@ const qcCourses = [
     title: "CP管制計畫& PPAP零組件核准程序",
     sessions: [
       { date: "01/09(五)", time: "09:00~17:00", session: "第1梯次", url: "https://store.cpc.org.tw/Train/Contents/TC7919" },
-      { date: "04/10(五)", time: "09:00~17:00", session: "第2梯次", url: "https://store.cpc.org.tw/Train/Contents/TC7920" },
+      { date: "04/10(五)確定開課", time: "09:00~17:00", session: "第2梯次", url: "https://store.cpc.org.tw/Train/Contents/TC7920" },
       { date: "07/10(五)", time: "09:00~17:00", session: "第3梯次", url: "https://store.cpc.org.tw/Train/Contents/TC7921" },
       { date: "10/16(五)", time: "09:00~17:00", session: "第4梯次", url: "https://store.cpc.org.tw/Train/Contents/TC7922" },
     ],
@@ -1088,7 +1088,7 @@ const qcCourses = [
   {
     title: "製造現場幹部技能培訓",
     sessions: [
-      { date: "03/30(一)", time: "09:00~17:00", session: "第1梯次", url: "https://store.cpc.org.tw/Train/Contents/TC8036" },
+      { date: "03/30(一)確定開課", time: "09:00~17:00", session: "第1梯次", url: "https://store.cpc.org.tw/Train/Contents/TC8036" },
       { date: "08/21(五)", time: "09:00~17:00", session: "第2梯次", url: "https://store.cpc.org.tw/Train/Contents/TC8859" },
       { date: "11/13(五)", time: "09:00~17:00", session: "第3梯次", url: "https://store.cpc.org.tw/Train/Contents/TC8037" },
     ],
@@ -1182,7 +1182,7 @@ const productionCourses = [
   {
     title: "生產線管理運作實務",
     sessions: [
-      { date: "05/07(四)", time: "09:30~16:30", session: "第2梯次", url: "https://store.cpc.org.tw/Train/Contents/TC7765" },
+      { date: "05/07(四)確定開課", time: "09:30~16:30", session: "第2梯次", url: "https://store.cpc.org.tw/Train/Contents/TC7765" },
       { date: "08/06(四)", time: "09:30~16:30", session: "第3梯次", url: "https://store.cpc.org.tw/Train/Contents/TC7766" },
       { date: "12/03(四)", time: "09:30~16:30", session: "第4梯次", url: "https://store.cpc.org.tw/Train/Contents/TC7767" },
     ],
@@ -1240,7 +1240,7 @@ const productionCourses = [
   {
     title: "倉儲管理與存貨決策",
     sessions: [
-      { date: "04/30(四)", time: "09:30~16:30", session: "第1梯次", url: "https://store.cpc.org.tw/Train/Contents/TC8584" },
+      { date: "04/30(四)確定開課", time: "09:30~16:30", session: "第1梯次", url: "https://store.cpc.org.tw/Train/Contents/TC8584" },
       { date: "07/27(一)", time: "09:30~16:30", session: "第2梯次", url: "https://store.cpc.org.tw/Train/Contents/TC8586" },
     ],
   },
