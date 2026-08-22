@@ -214,134 +214,6 @@ const isoCourses = [
   },
 ];
 
-// 行政總務系列課程推薦
-const adminCourses = [
-  {
-    title: "固定資產管理規劃、運用與查核",
-    sessions: [
-      {
-        date: "08/14(五)",
-        time: "09:30~16:30",
-        session: "第1梯次",
-        url: "https://store.cpc.org.tw/Train/Contents/TC9628",
-      },
-    ],
-  },
-  {
-    title: "高效益總務行政管理實務",
-    sessions: [
-      {
-        date: "04/15(三)",
-        time: "09:30~16:30",
-        session: "第1梯次",
-        url: "https://store.cpc.org.tw/Train/Contents/TC8050",
-      },
-      {
-        date: "09/09(三)",
-        time: "09:30~16:30",
-        session: "第2梯次",
-        url: "https://store.cpc.org.tw/Train/Contents/TC8051",
-      },
-    ],
-  },
-  {
-    title: "從繁瑣到自動化-生成式 AI 在行政自動化的應用",
-    sessions: [
-      {
-        date: "03/02(一)",
-        time: "09:30~16:30",
-        session: "第1梯次 確定開課",
-        url: "https://store.cpc.org.tw/Train/Contents/TD3806",
-      },
-      {
-        date: "11/02(一)",
-        time: "09:30~16:30",
-        session: "第2梯次",
-        url: "https://store.cpc.org.tw/Train/Contents/TD3807",
-      },
-    ],
-  },
-  {
-    title: "新世代總務工作管理與問題解決技巧",
-    sessions: [
-      {
-        date: "03/25(三)",
-        time: "09:30~16:30",
-        session: "第1梯次",
-        url: "https://store.cpc.org.tw/Train/Contents/TC9629",
-      },
-      {
-        date: "09/07(一)",
-        time: "09:30~16:30",
-        session: "第2梯次",
-        url: "https://store.cpc.org.tw/Train/Contents/TC9630",
-      },
-    ],
-  },
-  {
-    title: "總務工作常見問題與解決對策",
-    sessions: [
-      {
-        date: "05/07(四)",
-        time: "09:30~16:30",
-        session: "第1梯次",
-        url: "https://store.cpc.org.tw/Train/Contents/TC8048",
-      },
-      {
-        date: "10/07(三)",
-        time: "09:30~16:30",
-        session: "第2梯次",
-        url: "https://store.cpc.org.tw/Train/Contents/TC8049",
-      },
-    ],
-  },
-  {
-    title: "總務行政人員入門實務指南",
-    sessions: [
-      {
-        date: "09/02(三)",
-        time: "09:30~16:30",
-        session: "第1梯次",
-        url: "https://store.cpc.org.tw/Train/Contents/TC7761",
-      },
-    ],
-  },
-  {
-    title: "職工福利委員會運作與職工福利方案設計實務",
-    sessions: [
-      {
-        date: "04/27(一)",
-        time: "09:30~16:30",
-        session: "第1梯次 確定開課",
-        url: "https://store.cpc.org.tw/Train/Contents/TC9631",
-      },
-      {
-        date: "10/14(三)",
-        time: "09:30~16:30",
-        session: "第2梯次",
-        url: "https://store.cpc.org.tw/Train/Contents/TC9632",
-      },
-    ],
-  },
-  {
-    title: "契約生命週期管理與風險控管-從條文理解到爭議處理的全方位契約實務課程",
-    sessions: [
-      {
-        date: "04/01(三)",
-        time: "09:30~16:30",
-        session: "第1梯次",
-        url: "https://store.cpc.org.tw/Train/Contents/TC9720",
-      },
-      {
-        date: "10/23(五)",
-        time: "09:30~16:30",
-        session: "第2梯次",
-        url: "https://store.cpc.org.tw/Train/Contents/TC9721",
-       }
-       ]
-  }
- ]
-
 // 採購系列課程推薦
 const purchaseCourses = [
   {
@@ -1330,46 +1202,6 @@ function renderExperiences() {
 function renderCourses() {
   const coursesGrid = document.getElementById("coursesGrid");
 
-  // 生成行政總務系列課程區塊
-  const adminSection = document.createElement("div");
-  adminSection.className = "course-section";
-  adminSection.id = "admin-courses";
-  adminSection.innerHTML = `
-    <h3 class="course-category-title">行政總務系列課程推薦</h3>
-    <div class="course-list">
-      ${adminCourses
-        .map(
-          (course) => `
-        <div class="course-item course-item-no-image">
-          <div class="course-header">
-            <div class="course-title-text">${course.title}</div>
-          </div>
-          <div class="course-sessions">
-            ${course.sessions
-              .map(
-                (s) => `
-              <div class="session-item">
-                <div class="session-info">
-                  <span class="session-number">${s.session}</span>
-                  <span class="session-date">${s.date}</span>
-                  <span class="session-time">${s.time}</span>
-                </div>
-                <div class="session-date-info">
-                  <a href="${s.url}" target="_blank" class="session-link">立即報名</a>
-                </div>
-              </div>
-            `,
-              )
-              .join("")}
-          </div>
-        </div>
-      `,
-        )
-        .join("")}
-    </div>
-  `;
-  coursesGrid.appendChild(adminSection);
-
   // 生成採購系列課程區塊
   const purchaseSection = document.createElement("div");
   purchaseSection.className = "course-section";
@@ -1649,7 +1481,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   console.log("✅ 網站已成功載入!");
   console.log(`📚 共載入 ${experiences.length} 項經歷`);
-  console.log(`🎓 行政總務系列課程: ${adminCourses.length} 門`);
   console.log(`🎓 採購系列課程: ${purchaseCourses.length} 門`);
   console.log(`🎓 研發系列課程: ${rdCourses.length} 門`);
   console.log(`🎓 品管系列課程: ${qcCourses.length} 門`);
