@@ -994,6 +994,49 @@ body.modal-open {
     box-shadow: 0 6px 18px rgba(18, 35, 64, 0.35);
 }
 
+/* ==================== 回到頂端按鈕 ==================== */
+.back-to-top {
+    position: fixed;
+    right: 1.8rem;
+    bottom: 1.8rem;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 16px rgba(30, 58, 95, 0.35);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(12px);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s, background-color 0.3s ease;
+    z-index: 900;
+}
+
+.back-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.back-to-top:hover {
+    background-color: var(--accent-color);
+    color: var(--primary-dark);
+}
+
+@media (max-width: 480px) {
+    .back-to-top {
+        right: 1.2rem;
+        bottom: 1.2rem;
+        width: 42px;
+        height: 42px;
+    }
+}
+
 /* ==================== 頁腳 ==================== */
 .footer {
     background-color: #122340;

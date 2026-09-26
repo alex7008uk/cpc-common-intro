@@ -1120,6 +1120,19 @@ function initNavbarScroll() {
   });
 }
 
+function initBackToTop() {
+  const backToTop = document.getElementById("backToTop");
+  if (!backToTop) return;
+
+  window.addEventListener("scroll", () => {
+    backToTop.classList.toggle("visible", window.pageYOffset > 400);
+  });
+
+  backToTop.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+}
+
 // ==================== 初始化所有功能 ====================
 document.addEventListener("DOMContentLoaded", () => {
   // 漢堡選單 toggle
@@ -1141,6 +1154,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // 初始化功能
   initSmoothScroll();
   initNavbarScroll();
+  initBackToTop();
 
   console.log("✅ 網站已成功載入!");
   console.log(`🎓 課程總數: ${allCourses.length} 門`);
