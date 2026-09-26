@@ -11,7 +11,7 @@ const allCourses = [
     ],
   },
   {
-    title: "AIAG-VDA SPC統計製程管製",
+    title: "AIAG-VDA SPC統計製程管制",
     category: "品質管理",
     sessions: [
       { date: "01/05(二)", time: "09:00~17:00", hours: 7, session: "1" },
@@ -108,7 +108,7 @@ const allCourses = [
     ],
   },
   {
-    title: "採購品類策略與議價談判",
+    title: "採購品類策略與議價談判",
     category: "採購管理",
     sessions: [
       { date: "01/25(一)", time: "09:30~16:30", hours: 6, session: "1" },
@@ -143,7 +143,7 @@ const allCourses = [
   },
   {
     title: "全方位生產管理手法研習",
-    category: "品質管理",
+    category: "生產管理",
     sessions: [
       { date: "02/22(一)", time: "09:00~17:00", hours: 7, session: "1" },
       { date: "06/04(五)", time: "09:00~17:00", hours: 7, session: "2" },
@@ -160,7 +160,7 @@ const allCourses = [
     title: "ISO 22000：2018食品安全管理系統內部稽核員訓練",
     category: "品質管理",
     sessions: [
-      { date: "02/24 、25(三四)", time: "09:30~16:30", hours: 12, session: "1" },
+      { date: "02/24、25(三四)", time: "09:30~16:30", hours: 12, session: "1" },
       { date: "08/25、26(三四)", time: "09:30~16:30", hours: 12, session: "2" },
     ],
   },
@@ -183,7 +183,7 @@ const allCourses = [
   },
   {
     title: "倉儲物流實戰：找得到、管得清、出得快",
-    category: "品質管理",
+    category: "生產管理",
     sessions: [
       { date: "03/02(二)", time: "09:00-17:00", hours: 7, session: "1" },
       { date: "09/13(一)", time: "09:00-17:00", hours: 7, session: "2" },
@@ -201,7 +201,8 @@ const allCourses = [
     title: "韌性採購與敏捷供應鏈建立",
     category: "採購管理",
     sessions: [
-      { date: "03/03(三)", time: "09:30~16:30", hours: 6, session: "" },
+      { date: "03/03(三)", time: "09:30~16:30", hours: 6, session: "1" },
+      { date: "09/02(四)", time: "09:30~16:30", hours: 6, session: "2" },
     ],
   },
   {
@@ -214,7 +215,7 @@ const allCourses = [
     ],
   },
   {
-    title: "採購即戰力：供應鏈⾵險管理",
+    title: "採購即戰力：供應鏈風險管理",
     category: "採購管理",
     sessions: [
       { date: "03/05(五)", time: "09:30~16:30", hours: 6, session: "1" },
@@ -246,7 +247,7 @@ const allCourses = [
   },
   {
     title: "企業策略規劃管理",
-    category: "領導管理",
+    category: "生產管理",
     sessions: [
       { date: "03/10(三)", time: "09:30~16:30", hours: 6, session: "1" },
       { date: "06/17(四)", time: "09:30~16:30", hours: 6, session: "2" },
@@ -263,7 +264,7 @@ const allCourses = [
   },
   {
     title: "AI 在採購數據分析之應用",
-    category: "總務行政",
+    category: "採購管理",
     sessions: [
       { date: "03/12(五)", time: "09:30~16:30", hours: 6, session: "1" },
       { date: "07/14(三)", time: "09:30~16:30", hours: 6, session: "2" },
@@ -289,7 +290,7 @@ const allCourses = [
     title: "精實生產管理-7大浪費鑑別與改善",
     category: "生產管理",
     sessions: [
-      { date: "03/17(三)", time: "09:30-16:30", hours: 6, session: "2" },
+      { date: "03/17(三)", time: "09:30-16:30", hours: 6, session: "1" },
       { date: "07/07(三)", time: "09:30-16:30", hours: 6, session: "2" },
     ],
   },
@@ -347,8 +348,8 @@ const allCourses = [
     title: "ISO 文管新手實戰入門工作坊",
     category: "品質管理",
     sessions: [
-      { date: "03/25(四)", time: "09:30~16:30", hours: 6, session: "" },
-      { date: "08/27(五)", time: "09:30~16:30", hours: 6, session: "" },
+      { date: "03/25(四)", time: "09:30~16:30", hours: 6, session: "1" },
+      { date: "08/27(五)", time: "09:30~16:30", hours: 6, session: "2" },
     ],
   },
   {
@@ -366,7 +367,7 @@ const allCourses = [
     sessions: [
       { date: "03/29(一)", time: "09:00~17:00", hours: 7, session: "1" },
       { date: "07/09(五)", time: "09:00~17:00", hours: 7, session: "2" },
-      { date: "10/08(五)", time: "09:00~17:00", hours: 7, session: "2" },
+      { date: "10/08(五)", time: "09:00~17:00", hours: 7, session: "3" },
     ],
   },
   {
@@ -386,7 +387,7 @@ const allCourses = [
     ],
   },
   {
-    title: "基層幹部如何强化管理能力提升企業競爭力",
+    title: "基層幹部如何強化管理能力提升企業競爭力",
     category: "生產管理",
     sessions: [
       { date: "04/01(四)", time: "09:30~16:30", hours: 6, session: "1" },
@@ -463,8 +464,8 @@ const allCourses = [
     title: "SQM供應商管理與輔導",
     category: "品質管理",
     sessions: [
-      { date: "04/21(三)", time: "09:00~17:00", hours: 7, session: "" },
-      { date: "09/24(五)", time: "09:00~17:00", hours: 7, session: "" },
+      { date: "04/21(三)", time: "09:00~17:00", hours: 7, session: "1" },
+      { date: "09/24(五)", time: "09:00~17:00", hours: 7, session: "2" },
     ],
   },
   {
@@ -555,7 +556,7 @@ const allCourses = [
   },
   {
     title: "AI採購管理實戰：破解缺料、庫存與採購成本問題",
-    category: "品質管理",
+    category: "採購管理",
     sessions: [
       { date: "05/12(三)", time: "09:00-17:00", hours: 7, session: "1" },
       { date: "11/05(五)", time: "09:00-17:00", hours: 7, session: "2" },
@@ -612,8 +613,8 @@ const allCourses = [
     title: "最有效率的企業問題解決術：AI+數據的力量",
     category: "品質管理",
     sessions: [
-      { date: "05/28(五)", time: "09:00-17:00", hours: 7, session: "" },
-      { date: "10/18(一)", time: "09:00-17:00", hours: 7, session: "" },
+      { date: "05/28(五)", time: "09:00-17:00", hours: 7, session: "1" },
+      { date: "10/18(一)", time: "09:00-17:00", hours: 7, session: "2" },
     ],
   },
   {
@@ -625,14 +626,15 @@ const allCourses = [
   },
   {
     title: "結構化-問題分析與解決",
-    category: "生產管理",
+    category: "品質管理",
     sessions: [
       { date: "06/01(二)", time: "09:30~16:30", hours: 6, session: "1" },
+      { date: "11/09(二)", time: "09:30~16:30", hours: 6, session: "2" },
     ],
   },
   {
-    title: "職場表達力 ：⾼效溝通與跨部門關係管理",
-    category: "採購管理",
+    title: "職場表達力 ：高效溝通與跨部門關係管理",
+    category: "生產管理",
     sessions: [
       { date: "06/02(三)", time: "09:30~16:30", hours: 6, session: "1" },
       { date: "11/12(五)", time: "09:30~16:30", hours: 6, session: "2" },
@@ -640,9 +642,10 @@ const allCourses = [
   },
   {
     title: "AI導入企業實踐策略規劃課程",
-    category: "採購管理",
+    category: "生產管理",
     sessions: [
       { date: "06/04(五)", time: "09:30~16:30", hours: 6, session: "1" },
+      { date: "10/08(五)", time: "09:30~16:30", hours: 6, session: "2" },
     ],
   },
   {
@@ -692,7 +695,7 @@ const allCourses = [
   },
   {
     title: "製造業AI導入實戰班：從痛點盤點到 AI 導入提案",
-    category: "品質管理",
+    category: "生產管理",
     sessions: [
       { date: "06/25(五)", time: "09:30-16:30", hours: 6, session: "" },
     ],
@@ -740,7 +743,7 @@ const allCourses = [
     ],
   },
   {
-    title: "全⽅位採購管理實務工作坊",
+    title: "全方位採購管理實務工作坊",
     category: "採購管理",
     sessions: [
       { date: "07/22、23(四五)", time: "09:00~17:00", hours: 14, session: "" },
@@ -748,7 +751,7 @@ const allCourses = [
   },
   {
     title: "生產計畫與控制實戰：破解排程混亂與交期壓力",
-    category: "品質管理",
+    category: "生產管理",
     sessions: [
       { date: "07/26、27(一二)", time: "09:00-17:00", hours: 14, session: "" },
     ],
@@ -785,21 +788,14 @@ const allCourses = [
     title: "ISO13485醫療器材管理系統內部稽核員-2016版",
     category: "品質管理",
     sessions: [
-      { date: "08/5、6(四五)", time: "09:30~16:30", hours: 12, session: "" },
-    ],
-  },
-  {
-    title: "韌性採購與敏捷供應鏈建立",
-    category: "總務行政",
-    sessions: [
-      { date: "09/02(四)", time: "09:30~16:30", hours: 6, session: "" },
+      { date: "08/05、06(四五)", time: "09:30~16:30", hours: 12, session: "" },
     ],
   },
   {
     title: "IE手法與生產作業改善技巧研習班",
     category: "品質管理",
     sessions: [
-      { date: "09/13(一)", time: "09:00~17:00", hours: 7, session: "2" },
+      { date: "09/13(一)", time: "09:00~17:00", hours: 7, session: "" },
     ],
   },
   {
@@ -824,13 +820,6 @@ const allCourses = [
     ],
   },
   {
-    title: "AI導入企業實踐策略規劃課程",
-    category: "總務行政",
-    sessions: [
-      { date: "10/08(五)", time: "09:30~16:30", hours: 6, session: "2" },
-    ],
-  },
-  {
     title: "AI賦能高階5S實戰：從環境管理到企業改善",
     category: "品質管理",
     sessions: [
@@ -845,15 +834,8 @@ const allCourses = [
     ],
   },
   {
-    title: "結構化-問題分析與解決",
-    category: "品質管理",
-    sessions: [
-      { date: "11/09(二)", time: "09:30~16:30", hours: 6, session: "2" },
-    ],
-  },
-  {
     title: "庫存管理實戰：破解缺料與庫存浪費問題",
-    category: "品質管理",
+    category: "生產管理",
     sessions: [
       { date: "11/29、30(一二)", time: "09:00-17:00", hours: 14, session: "" },
     ],
