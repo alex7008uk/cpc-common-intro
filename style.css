@@ -234,6 +234,24 @@ body {
     box-shadow: 0 8px 28px rgba(212, 168, 83, 0.5);
 }
 
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.cta-button-secondary {
+    background-color: transparent;
+    color: var(--white);
+    border: 2px solid var(--white);
+    box-shadow: none;
+}
+
+.cta-button-secondary:hover {
+    background-color: var(--white);
+    color: var(--primary-dark);
+}
+
 /* ==================== 經歷區塊 ==================== */
 .about {
     padding: 80px 0;
