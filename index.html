@@ -18,11 +18,8 @@
                   <span></span><span></span><span></span>
                 </button>
                 <ul class="nav-links">
-                    <li><a href="#hero">首頁</a></li>
-                    <li><a href="#purchase-courses">採購</a></li>
-                    <li><a href="#rd-courses">研發</a></li>
-                    <li><a href="#qc-courses">品管(ISO)</a></li>
-                    <li><a href="#production-courses">生產</a></li>
+                    <li><a href="https://cpc-lhl-intro.pages.dev/" target="_blank" rel="noopener">洽詢課程</a></li>
+                    <li><a href="files/空白報名表.docx" download>下載報名表</a></li>
                 </ul>
             </div>
         </div>
@@ -50,11 +47,49 @@
     <section id="courses" class="courses">
         <div class="container">
             <h2 class="section-title">課程推薦介紹</h2>
+
+            <div class="course-filter-bar">
+                <div class="filter-search">
+                    <input type="text" id="courseSearch" placeholder="搜尋課程名稱..." aria-label="搜尋課程名稱">
+                </div>
+                <div class="filter-selects">
+                    <div class="custom-select" id="categoryFilter" data-placeholder="全部分項"></div>
+                    <div class="custom-select" id="monthFilter" data-placeholder="全部月份"></div>
+                </div>
+            </div>
+
             <div class="courses-grid" id="coursesGrid">
                 <!-- 使用 JavaScript 動態生成卡片 -->
             </div>
         </div>
     </section>
+
+    <!-- 報名提示彈窗 -->
+    <div class="modal" id="enrollModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="enrollModalTitle">
+            <div class="modal-header">
+                <button type="button" class="modal-close" aria-label="關閉">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 2L14 14M14 2L2 14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+                </button>
+                <h3 class="modal-title" id="enrollModalTitle">2027年課程正在上架中</h3>
+            </div>
+            <div class="modal-content">
+                <p class="modal-body">
+                    目前部分課程的線上報名網址尚未開放，預計於<strong>11月</strong>陸續上架。
+                </p>
+                <div class="modal-note">
+                    <span class="modal-note-highlight">想先報名的學員不用等！</span>
+                    請先下載空白報名表，填寫完成後回寄給承辦人林小姐，
+                    <a href="mailto:03307@cpc.tw">03307@cpc.tw</a>，我們會先幫您保留名額。
+                </div>
+                <a href="files/空白報名表.docx" download class="modal-download-btn">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 3V15M12 15L7 10M12 15L17 10" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 19H20" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></svg>
+                    下載報名表
+                </a>
+            </div>
+        </div>
+    </div>
 
     <!-- 頁腳 -->
     <footer class="footer">
