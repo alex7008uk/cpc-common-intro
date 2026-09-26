@@ -414,6 +414,77 @@ body {
 }
 
 /* ==================== 課程區塊 ==================== */
+.course-stats {
+    padding: 80px 0 40px;
+    background-color: var(--light-bg);
+}
+
+.course-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+.course-stat-card {
+    background: var(--white);
+    border-radius: 16px;
+    padding: 2.2rem 2rem;
+    box-shadow: var(--shadow);
+    border: 1px solid rgba(30, 58, 95, 0.06);
+    transition: all 0.3s ease;
+}
+
+.course-stat-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--accent-color);
+}
+
+.course-stat-title {
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+    font-size: 1.15rem;
+    color: var(--text-color);
+    font-weight: 700;
+    margin-bottom: 0.6rem;
+}
+
+.course-stat-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    color: var(--primary-color);
+}
+
+.course-stat-icon svg {
+    width: 100%;
+    height: 100%;
+    stroke-width: 1.75;
+}
+
+.course-stat-desc {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+.course-stat-count {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.course-stat-count span {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-light);
+}
+
 .courses {
     padding: 80px 0;
     background-color: var(--light-bg);
@@ -613,8 +684,13 @@ body {
 }
 
 .session-date::before {
-    content: "📅";
-    font-size: 0.9rem;
+    content: "";
+    width: 15px;
+    height: 15px;
+    flex-shrink: 0;
+    background-color: var(--primary-color);
+    -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M8 2v3'/%3E%3Cpath d='M16 2v3'/%3E%3Crect x='3' y='3' width='18' height='18' rx='2'/%3E%3Cpath d='M3 9h18'/%3E%3C/svg%3E") center / contain no-repeat;
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M8 2v3'/%3E%3Cpath d='M16 2v3'/%3E%3Crect x='3' y='3' width='18' height='18' rx='2'/%3E%3Cpath d='M3 9h18'/%3E%3C/svg%3E") center / contain no-repeat;
 }
 
 .session-time {
@@ -626,8 +702,13 @@ body {
 }
 
 .session-time::before {
-    content: "🕐";
-    font-size: 0.9rem;
+    content: "";
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+    background-color: var(--text-light);
+    -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpath d='M12 6v6l4 2'/%3E%3C/svg%3E") center / contain no-repeat;
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpath d='M12 6v6l4 2'/%3E%3C/svg%3E") center / contain no-repeat;
 }
 
 .session-date-info {

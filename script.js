@@ -863,6 +863,59 @@ const allCourses = [
 // 分項分類清單（依資料出現順序去重）
 const courseCategories = [...new Set(allCourses.map((c) => c.category))];
 
+// ==================== 課程統計區塊 ====================
+const categoryIcons = {
+  品質管理: "shield-check",
+  生產管理: "factory",
+  研發管理: "flask-conical",
+  採購管理: "shopping-cart",
+  領導管理: "compass",
+  總務行政: "folder-kanban",
+};
+
+// 各分類的課程範疇說明（依實際課程資料歸納關鍵字）
+const categoryDescriptions = {
+  品質管理: "品質系統、FMEA、SPC、MSA、ISO 等",
+  生產管理: "生產現場、工業工程、精實與智慧製造等",
+  研發管理: "新產品開發、研發流程、設計與創新等",
+  採購管理: "議價談判、供應商管理、供應鏈風險等",
+  領導管理: "企業策略、組織領導與管理職能等",
+  總務行政: "行政總務、數位工具與流程應用等",
+};
+
+// 依課程資料動態統計各分類課程數量並渲染
+function renderCourseStats() {
+  const grid = document.getElementById("courseStatsGrid");
+  if (!grid) return;
+
+  const counts = new Map();
+  allCourses.forEach((course) => {
+    counts.set(course.category, (counts.get(course.category) || 0) + 1);
+  });
+
+  grid.innerHTML = courseCategories
+    .map((category) => {
+      const count = counts.get(category) || 0;
+      const description = categoryDescriptions[category] || "";
+      const iconName = categoryIcons[category] || "book-open";
+      return `
+        <div class="course-stat-card">
+          <h3 class="course-stat-title">
+            <span class="course-stat-icon"><i data-lucide="${iconName}"></i></span>
+            ${category}
+          </h3>
+          ${description ? `<p class="course-stat-desc">${description}</p>` : ""}
+          <div class="course-stat-count">${count} <span>門</span></div>
+        </div>
+      `;
+    })
+    .join("");
+
+  if (window.lucide) {
+    window.lucide.createIcons();
+  }
+}
+
 // ==================== 篩選狀態 ====================
 const filterState = {
   keyword: "",
@@ -1144,6 +1197,9 @@ document.addEventListener("DOMContentLoaded", () => {
       hamburger.classList.toggle("active");
     });
   }
+
+  // 生成課程統計區塊
+  renderCourseStats();
 
   // 生成課程篩選列與卡片
   initCourseFilters();
