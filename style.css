@@ -828,6 +828,56 @@ body {
     font-size: 1rem;
 }
 
+/* ==================== 企業培訓洽詢區塊 ==================== */
+.training-cta {
+    padding: 0 0 80px;
+    background-color: var(--light-bg);
+}
+
+.training-cta-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    background: linear-gradient(135deg, #1e3a5f 0%, #122340 100%);
+    border-radius: 20px;
+    padding: 2.5rem 3rem;
+    box-shadow: var(--shadow-lg);
+}
+
+.training-cta-text h3 {
+    color: var(--white);
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 0.6rem;
+}
+
+.training-cta-text p {
+    color: var(--white);
+    opacity: 0.85;
+    font-size: 1rem;
+}
+
+.training-cta-button {
+    flex-shrink: 0;
+    display: inline-block;
+    padding: 0.9rem 2rem;
+    background-color: var(--white);
+    color: var(--primary-dark);
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+}
+
+.training-cta-button:hover {
+    background-color: var(--accent-color);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 22px rgba(212, 168, 83, 0.4);
+}
+
 /* ==================== 報名提示彈窗 ==================== */
 .modal {
     display: none;
@@ -1198,6 +1248,17 @@ body.modal-open {
 
     .courses {
         padding: 60px 0;
+    }
+
+    .training-cta-box {
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+        padding: 2rem;
+    }
+
+    .training-cta-button {
+        text-align: center;
     }
 
     .instructor-profile {
